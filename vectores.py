@@ -58,7 +58,6 @@ for numero in numeros:
 
 print(f'La cantidad de números pares ingresador fueron: {cont_pares}')
 print(f'La cantidad de números impares ingresador fueron: {cont_impar}')
-# print(f'La cantidad de números primos ingresador fueron: {cont_primo}')
 
 
 # Ejercicio 3
