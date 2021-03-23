@@ -48,17 +48,25 @@ print(f'Los números ingresados fueron: {numeros}')
 # Recorridos de los vectores
 cont_pares = 0
 cont_impar = 0
-cont = 0
+cnp = 0
 cont_primo = 0
 for numero in numeros:
     if numero % 2 == 0:
         cont_pares += 1
     else:
         cont_impar += 1
+    if numero == 2:
+        cont_primo += 1
+
+for n in range(2, len(numeros)):
+    if numeros[n] % n == 0:
+        cnp += 1
+    else:
+        cont_primo += 1
 
 print(f'La cantidad de números pares ingresador fueron: {cont_pares}')
 print(f'La cantidad de números impares ingresador fueron: {cont_impar}')
-
+print(f'La cantidad de números primos ingresador fueron: {cont_primo}')
 
 # Ejercicio 3
 i = 1
